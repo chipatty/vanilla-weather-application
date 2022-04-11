@@ -21,7 +21,7 @@
             <div class="col-3 top-date">
               <p id="day-date">Day Month DD, YYYY</p>
             </div>
-            <div class="col">
+            <div class="col-6">
               <form id="city-form">
                 <input
                   type="text"
@@ -32,22 +32,22 @@
                 <input type="submit" value="Search" class="btn btn-primary" />
               </form>
             </div>
-            <div class="col-3">
-              <p>Coded by:</p>
+
+            <div class="col-3 unit">
+              <a href="#" class="unit" id="fahrenheit">°F</a>
+              |
+              <a href="#" class="unit" id="celsius">°C</a>
             </div>
           </div>
           <div class="row">
             <div class="col-3 top-time"><p id="time">#:## PM</p></div>
-            <div class="col">
+            <div class="col-6">
               <button id="current-location" class="btn btn-light">
                 Current Location
               </button>
               <button id="random-location" class="btn btn-light">
                 Random Location
               </button>
-            </div>
-            <div class="col-3">
-              <p>Patricia Tran</p>
             </div>
           </div>
         </header>
@@ -56,13 +56,19 @@
           <div class="row middle">
             <div class="col weather-elements">
               <div class="row">
-                <div class="col" id="precipitation">Precipitation: ???%</div>
+                <div class="col" id="precipitation">
+                  <span class="weather-category">Precipitation:</span> ???%
+                </div>
               </div>
               <div class="row">
-                <div class="col" id="humidity">Humidity: ???%</div>
+                <div class="col" id="humidity">
+                  <span class="weather-category">Humidity:</span> ???%
+                </div>
               </div>
               <div class="row">
-                <div class="col" id="wind">Wind: ??? km/h</div>
+                <div class="col" id="wind">
+                  <span class="weather-category">Wind:</span> ??? km/h
+                </div>
               </div>
             </div>
             <div class="col">
@@ -79,16 +85,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="row">
-                <div class="col unit">
-                  <a href="#" class="unit" id="fahrenheit">°F</a>
-                  |
-                  <a href="#" class="unit" id="celsius">°C</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2 local-temp" id="city-temp">Temp°</div>
-              </div>
+              <div class="col-2 local-temp" id="city-temp">Temp°</div>
             </div>
           </div>
         </section>
@@ -122,13 +119,12 @@
             <div class="col">16°</div>
           </div>
         </footer>
-        <a
-          href="https://github.com/chipatty/weather-app"
-          target="_blank"
-          class="github"
-          >Open-source code</a
-        >
-        by Patricia Tran
+        <small>
+          <a href="https://github.com/chipatty/weather-app" target="_blank"
+            >Open-source code</a
+          >
+          by Patricia Tran
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>

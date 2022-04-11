@@ -1,0 +1,96 @@
+div.container {
+  margin-left: 27.5%;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: 45%;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header form {
+  margin-bottom: 5px;
+}
+
+header .top-date,
+.top-time {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header .city-search {
+  width: 73%;
+}
+
+header #current-location-form,
+#random-location-form {
+  display: inline-block;
+}
+
+header .unit {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+header #celsius:hover,
+#fahrenheit:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+section div.weather-elements {
+  padding-top: 35px;
+  text-align: right;
+}
+
+section .weather-category {
+  font-weight: bold;
+}
+section div.city {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section div.city-emoji {
+  font-size: 50px;
+}
+
+section div.city-weather {
+  font-size: 25px;
+}
+
+section #city-name,
+#weather-description {
+  text-transform: capitalize;
+}
+
+section div.local-temp {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 25px;
+}
+
+footer div.col {
+  text-align: center;
+}
+
+footer .bottom-days {
+  font-weight: bold;
+}
+footer .bottom-emojis {
+  font-size: 40px;
+}
+footer .bottom-high-temp {
+  font-weight: bold;
+}
