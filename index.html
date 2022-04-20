@@ -4,121 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <header>
-          <div class="row">
-            <div class="col-3 top-date">
-              <p id="day-date">Day Month DD, YYYY</p>
-            </div>
-            <div class="col-6">
-              <form id="city-form">
-                <input
-                  type="text"
-                  placeholder="Enter a city"
-                  autofocus="on"
-                  id="city-input"
-                />
-                <input type="submit" value="Search" class="btn btn-primary" />
-              </form>
-            </div>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <header>
+            <div class="row">
+              <div class="col-3 top-date">
+                <p id="day-date">Day Month DD, YYYY</p>
+              </div>
+              <div class="col-6">
+                <form id="city-form">
+                  <input
+                    type="text"
+                    placeholder="Enter a city"
+                    autofocus="on"
+                    id="city-input"
+                  />
+                  <input type="submit" value="Search" class="btn btn-primary" />
+                </form>
+              </div>
 
-            <div class="col-3 unit">
-              <a href="#" class="unit" id="fahrenheit">°F</a>
-              |
-              <a href="#" class="unit" id="celsius">°C</a>
+              <div class="col-3 unit">
+                <a href="#" class="unit" id="fahrenheit">°F</a>
+                |
+                <a href="#" class="unit" id="celsius">°C</a>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-3 top-time"><p id="time">#:## PM</p></div>
-            <div class="col-6">
-              <button id="current-location" class="btn btn-light">
-                Current Location
-              </button>
-              <button id="random-location" class="btn btn-light">
-                Random Location
-              </button>
+            <div class="row">
+              <div class="col-3 top-time"><p id="time">#:## PM</p></div>
+              <div class="col-6">
+                <button id="current-location" class="btn btn-light">
+                  Current Location
+                </button>
+                <button id="random-location" class="btn btn-light">
+                  Random Location
+                </button>
+              </div>
             </div>
-          </div>
-        </header>
+          </header>
 
-        <section>
-          <div class="row middle">
-            <div class="col weather-elements">
-              <div class="row">
-                <div class="col" id="precipitation">
-                  <span class="weather-category">Precipitation:</span> ???%
+          <section>
+            <div class="row middle">
+              <div class="col weather-elements">
+                <div class="row">
+                  <div class="col" id="precipitation">
+                    <span class="weather-category">Precipitation:</span> ???%
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="humidity">
+                    <span class="weather-category">Humidity:</span> ???%
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="wind">
+                    <span class="weather-category">Wind:</span> ??? km/h
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col" id="humidity">
-                  <span class="weather-category">Humidity:</span> ???%
+              <div class="col">
+                <div class="row">
+                  <div class="col city" id="city-name">City</div>
+                </div>
+                <div class="row">
+                  <div class="col city-emoji">☀️</div>
+                </div>
+                <div class="row">
+                  <div class="col city-weather" id="weather-description">
+                    Weather Description
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col" id="wind">
-                  <span class="weather-category">Wind:</span> ??? km/h
-                </div>
+              <div class="col">
+                <div class="col-2 local-temp" id="city-temp">Temp°</div>
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <div class="col city" id="city-name">City</div>
-              </div>
-              <div class="row">
-                <div class="col city-emoji">☀️</div>
-              </div>
-              <div class="row">
-                <div class="col city-weather" id="weather-description">
-                  Weather Description
-                </div>
-              </div>
+          </section>
+          <footer>
+            <div class="row bottom-days">
+              <div class="col">Sun</div>
+              <div class="col">Mon</div>
+              <div class="col">Tue</div>
+              <div class="col">Wed</div>
+              <div class="col">Thu</div>
             </div>
-            <div class="col">
-              <div class="col-2 local-temp" id="city-temp">Temp°</div>
+            <div class="row bottom-emojis">
+              <div class="col">☀️</div>
+              <div class="col">🌥️</div>
+              <div class="col">🌨️</div>
+              <div class="col">☀️</div>
+              <div class="col">🌥️</div>
             </div>
-          </div>
-        </section>
-        <footer>
-          <div class="row bottom-days">
-            <div class="col">Sun</div>
-            <div class="col">Mon</div>
-            <div class="col">Tue</div>
-            <div class="col">Wed</div>
-            <div class="col">Thu</div>
-          </div>
-          <div class="row bottom-emojis">
-            <div class="col">☀️</div>
-            <div class="col">🌥️</div>
-            <div class="col">🌨️</div>
-            <div class="col">☀️</div>
-            <div class="col">🌥️</div>
-          </div>
-          <div class="row bottom-high-temp">
-            <div class="col">38°</div>
-            <div class="col">41°</div>
-            <div class="col">37°</div>
-            <div class="col">34°</div>
-            <div class="col">35°</div>
-          </div>
-          <div class="row bottom-low-temp">
-            <div class="col">14°</div>
-            <div class="col">27°</div>
-            <div class="col">15°</div>
-            <div class="col">16°</div>
-            <div class="col">16°</div>
-          </div>
-        </footer>
+            <div class="row bottom-high-temp">
+              <div class="col">38°</div>
+              <div class="col">41°</div>
+              <div class="col">37°</div>
+              <div class="col">34°</div>
+              <div class="col">35°</div>
+            </div>
+            <div class="row bottom-low-temp">
+              <div class="col">14°</div>
+              <div class="col">27°</div>
+              <div class="col">15°</div>
+              <div class="col">16°</div>
+              <div class="col">16°</div>
+            </div>
+          </footer>
+        </div>
         <small>
           <a href="https://github.com/chipatty/weather-app" target="_blank"
             >Open-source code</a

@@ -1,10 +1,13 @@
-div.container {
-  margin-left: 27.5%;
+.weather-app-wrapper {
+  margin-top: 50px;
+  margin-left: 15%;
+  max-width: 70%;
+}
+.weather-app {
   margin-top: 50px;
   padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  max-width: 45%;
   background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 header {
